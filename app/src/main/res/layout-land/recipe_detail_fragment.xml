@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:fitsSystemWindows="true"
+    android:orientation="horizontal"
+    >
+
+
+    <ScrollView
+        android:layout_width="0dp"
+        android:layout_weight="1"
+        android:layout_height="match_parent"
+        android:scrollbarStyle="insideInset"
+        style="@android:style/Widget.Holo.ScrollView"
+        android:clipToPadding="false"
+        android:background="@color/colorPrimary"
+        android:scrollIndicators="top|bottom"
+        android:scrollbarAlwaysDrawVerticalTrack="false"
+        android:isScrollContainer="false"
+        android:fillViewport="false">
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/recipe_ingredient"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            >
+        </android.support.v7.widget.RecyclerView>
+
+    </ScrollView>
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/recipe_step"
+        android:layout_width="0dp"
+        android:layout_weight="1"
+        android:layout_height="wrap_content"/>
+
+
+</LinearLayout>
